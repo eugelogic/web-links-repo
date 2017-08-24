@@ -63,3 +63,32 @@ register_activation_hook(__FILE__, function () {
 register_deactivation_hook(__FILE__, function () {
 	  flush_rewrite_rules();
 });
+
+if ( ! function_exists( 'add_wlr_custom_fields_to_index_tml' ) ) :
+	/**
+	 * Add Web Link Repo custom fields to the index template.
+	 *
+	 * @param string $details
+	 * @return string
+	 */
+	function add_wlr_custom_fields_to_index_tml( $details ) {
+		if ( 'wlr_web_link' !== get_post_type() ) {
+					return $details;
+		}
+
+		$web_link_field_url = get_post_meta( get_the_ID(), 'web_link_field_url', true );
+		$web_link_field_text = get_post_meta( get_the_ID(), 'web_link_field_text', true );
+
+		// Init output.
+		$output = '';
+
+		// Build output.
+		$output .= $web_link_field_url;
+		$output .= '<br />';
+		$output .= $web_link_field_text;
+
+		return $output;
+	}
+	add_filter( 'the_content', 'add_wlr_custom_fields_to_index_tml' );
+
+endif; // add_wlr_custom_fields_to_index_tml.

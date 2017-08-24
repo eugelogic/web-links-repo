@@ -16,11 +16,11 @@ function web_link_info_metabox( array $meta_box ) {
 
 	$fields = array(
 		array(
-			'id'   => 'web-link-field-url',
+			'id'   => 'web_link_field_url',
 			'name' => 'The URL of the Web Link',
 			'type' => 'text_url'),
 		array(
-			'id'   => 'web-link-field-text',
+			'id'   => 'web_link_field_text',
 			'name' => 'A simple description of the Web Link',
 			'type' => 'text')
 	);
