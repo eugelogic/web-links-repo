@@ -22,7 +22,15 @@ function web_link_info_metabox( array $meta_box ) {
 		array(
 			'id'   => 'web_link_field_text',
 			'name' => 'A simple description of the Web Link',
-			'type' => 'text')
+			'type' => 'text'),
+		array(
+			'id'   		=> 'web_link_field_wysiwyg',
+			'name' 		=> 'A WYSIWYG editor field to more info about the Web Link',
+			'type' 		=> 'wysiwyg',
+			'options' => array(
+				'textarea_rows' => 10
+			)
+		)
 	);
 
  	$meta_box[] = array(

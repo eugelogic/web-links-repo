@@ -47,7 +47,7 @@ function wlr_register_web_link() {
 	  'menu_position'      => null,
 	  'menu_icon'          => 'dashicons-admin-site',
 	  'can_export'         => true,
-	  'supports'           => array( 'title', 'editor' ),
+	  'supports'           => array( 'title' )
 	);
 
 	// Register Post Type.
