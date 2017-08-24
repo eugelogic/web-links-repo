@@ -26,6 +26,9 @@ If not, see https://www.gnu.org/licenses/gpl-3.0.html.
 /* exit if directly accessed */
 if( ! defined( 'ABSPATH' ) ) exit;
 
+// Create plugin path to be used in subfolders.
+define( 'WLR_DIR_PATH', plugin_dir_path( __FILE__ ) );
+
 // Load Scripts.
 require_once( plugin_dir_path( __FILE__ ) . '/inc/web-links-repo-scripts.php' );
 
@@ -34,3 +37,6 @@ require_once( plugin_dir_path( __FILE__ ) . '/inc/web-links-repo-cpt.php' );
 
 // Load Meta Boxes.
 require_once( plugin_dir_path( __FILE__ ) . '/inc/web-links-repo-fields.php' );
+
+// Load Templates.
+require_once( plugin_dir_path( __FILE__ ) . '/inc/web-links-repo-tmls.php' );
