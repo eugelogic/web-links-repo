@@ -31,3 +31,6 @@ require_once( plugin_dir_path( __FILE__ ) . '/inc/web-links-repo-scripts.php' );
 
 // Load Custom Post Type.
 require_once( plugin_dir_path( __FILE__ ) . '/inc/web-links-repo-cpt.php' );
+
+// Load Meta Boxes.
+require_once( plugin_dir_path( __FILE__ ) . '/inc/web-links-repo-fields.php' );
