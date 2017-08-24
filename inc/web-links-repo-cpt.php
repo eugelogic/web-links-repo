@@ -83,9 +83,15 @@ if ( ! function_exists( 'add_wlr_custom_fields_to_index_tml' ) ) :
 		$output = '';
 
 		// Build output.
+		$output .= '<a href="';
 		$output .= $web_link_field_url;
+		$output .= '" target="_blank"><img src="http://s.wordpress.com/mshots/v1/';
+		$output .= $web_link_field_url;
+		$output .= ' " /></a>';
 		$output .= '<br />';
+		// $output .= '<dic class="web-link-desc">';
 		$output .= $web_link_field_text;
+		// $output .= '<div/>';
 
 		return $output;
 	}
