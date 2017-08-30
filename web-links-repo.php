@@ -40,3 +40,6 @@ require_once( plugin_dir_path( __FILE__ ) . '/inc/web-links-repo-fields.php' );
 
 // Load Templates.
 require_once( plugin_dir_path( __FILE__ ) . '/inc/web-links-repo-tmls.php' );
+
+// Load Shortcodes.
+require_once( plugin_dir_path( __FILE__ ) . '/inc/web-links-repo-shortcodes.php' );

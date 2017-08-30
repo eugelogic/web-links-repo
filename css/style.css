@@ -4,9 +4,41 @@
 }
 
 img {
+  width: 100%;
+}
+.image-wrapper-index {
   max-width: 19em !important;
   margin-bottom: 1em;
   display: block;
   margin-left: auto;
   margin-right: auto
 }
+
+/* ----- Grid style for the Web Links grid ----- */
+.wlr-web-links-grid-wrapper {
+  max-width: 1080px;
+  margin: 0 0.5em;
+  display: grid;
+  grid-gap: 0.5em;
+  grid-template-columns: repeat(auto-fill, minmax(15em, 1fr) );
+}
+
+.wlf-web-link-grid-entry {
+  background-color: #f7f5e7;
+  border: 1px solid #999;
+  border-radius: 3px;
+}
+
+.wlf-web-link-grid-entry h6 {
+  margin: 1em 0 0 1em;
+}
+
+.web-link-desc-grid {
+  margin: 0 1em 1em;
+}
+
+#img-grid {
+  border-bottom: 1px solid #999;
+}
+
+/* ----- end ----- */
