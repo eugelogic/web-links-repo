@@ -8,17 +8,6 @@
  * @package Web Links Repo
  */
 
-// Check if admin and add admin scripts.
-if ( is_admin() ) {
-	/**
-	 * Add Admin Scripts.
-	 */
-	function wlr_add_admin_scripts() {
-			wp_enqueue_style( 'wlr-main-admin-style', plugins_url() . '/web-links-repo/css/style-admin.css' );
-	}
-	add_action( 'admin_init','wlr_add_admin_scripts' );
-}
-
 /**
  * Add Scripts.
  */

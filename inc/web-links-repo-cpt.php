@@ -86,14 +86,13 @@ if ( ! function_exists( 'add_wlr_custom_fields_to_index_tml' ) ) :
 		$output .= '<div class="image-wrapper-index">';
 		$output .= '<a href="';
 		$output .= $web_link_field_url;
-		$output .= '" target="_blank"><img src="http://s.wordpress.com/mshots/v1/';
+		$output .= '" target="_blank">';
+		$output .= '<img src="http://s.wordpress.com/mshots/v1/';
 		$output .= $web_link_field_url;
-		$output .= ' " /></a>';
+		$output .= '" />';
+		$output .= '</a>';
 		$output .= '</div><!-- image-wrapper-index -->';
-		$output .= '<br />';
-		// $output .= '<dic class="web-link-desc">';
 		$output .= $web_link_field_text;
-		// $output .= '<div/>';
 
 		return $output;
 	}
