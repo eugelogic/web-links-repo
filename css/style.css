@@ -14,6 +14,10 @@ img {
   margin-right: auto
 }
 
+.image-wrapper-single {
+  margin-bottom: 2em;
+}
+
 /* ----- Grid style for the Web Links grid ----- */
 .wlr-web-links-grid-wrapper {
   max-width: 1080px;

@@ -57,7 +57,7 @@ get_header(); ?>
 							$web_link_field_url = get_post_meta( get_the_ID(), 'web_link_field_url', true );
 							$web_link_field_wysiwyg = get_post_meta( get_the_ID(), 'web_link_field_wysiwyg', true );
 							// Show screenshot.
-							echo '<a href="' . esc_html($web_link_field_url) . '" target="_blank"><img src="http://s.wordpress.com/mshots/v1/' . esc_html($web_link_field_url) . ' " /></a>';
+							echo '<div class="image-wrapper-single"><a href="' . esc_html($web_link_field_url) . '" target="_blank"><img src="http://s.wordpress.com/mshots/v1/' . esc_html($web_link_field_url) . ' " /></a></div>';
 							// Serve full description.
 							echo wpautop($web_link_field_wysiwyg);
 						?>
