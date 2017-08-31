@@ -5,6 +5,7 @@
  * @author Eugene Molari
  * @link https://github.com/eugelogic
  * @license https://www.gnu.org/licenses/gpl-3.0.html
+ * @package Web Links Repo
  */
 function wlr_register_web_link() {
 
@@ -47,7 +48,7 @@ function wlr_register_web_link() {
 	  'menu_position'      => null,
 	  'menu_icon'          => 'dashicons-admin-site',
 	  'can_export'         => true,
-	  'supports'           => array( 'title' )
+	  'supports'           => array( 'title' ),
 	);
 
 	// Register Post Type.

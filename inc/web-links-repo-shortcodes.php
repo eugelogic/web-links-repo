@@ -11,8 +11,8 @@
 /**
  * CSS grid Web Links gallery.
  *
- * @param array $atts
- * @param ???   $content
+ * @param array $atts (please add comment).
+ * @param mixed $content (please add comment).
  */
 function wlr_links_grid( $atts, $content = null ) {
 	global $post;
@@ -94,7 +94,7 @@ function wlr_links_grid( $atts, $content = null ) {
 		return $output;
 	} else {
 		return '<p>No Links Found</p>';
-	}
+	} // End if().
 }
 // Video grid shortcode with title only.
 add_shortcode( 'web-links-grid', 'wlr_links_grid' );
