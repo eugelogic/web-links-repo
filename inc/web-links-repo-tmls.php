@@ -13,7 +13,7 @@ if ( ! function_exists( 'single_web_link_tml' ) ) :
 	 *
 	 * Use the single Web Link template.
 	 *
-	 * @param ??? $original_template
+	 * @param mixed $original_template (please add comment).
 	 */
 	function single_web_link_tml( $original_template ) {
 		if ( 'wlr_web_link' === get_post_type( get_queried_object() ) && is_single() ) {

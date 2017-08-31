@@ -9,6 +9,8 @@
  * Text Domain: web-links-repo
  * License: GPL3
  * License URI: https://www.gnu.org/licenses/gpl-3.0.html
+ *
+ * @package Web Links Repo
  */
 
 /*
@@ -24,7 +26,8 @@ If not, see https://www.gnu.org/licenses/gpl-3.0.html.
 */
 
 /* exit if directly accessed */
-if( ! defined( 'ABSPATH' ) ) exit;
+if ( ! defined( 'ABSPATH' ) ) { exit;
+}
 
 // Create plugin path to be used in subfolders.
 define( 'WLR_DIR_PATH', plugin_dir_path( __FILE__ ) );
